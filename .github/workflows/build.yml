@@ -1,0 +1,38 @@
+name: Build ICS
+
+on:
+  schedule:
+    # Runs every day at 05:10 UTC (06:10 or 05:10 London depending on DST)
+    - cron: "10 5 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # allow committing generated file
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+
+      - name: Generate ICS
+        run: |
+          python scripts/generate_calendar.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add docs/calendar.ics
+          git diff --quiet && echo "No changes" || (git commit -m "chore: update ICS $(date -u +"%Y-%m-%dT%H:%M:%SZ")" && git push)

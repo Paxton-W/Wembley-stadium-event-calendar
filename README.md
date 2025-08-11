@@ -2,11 +2,11 @@
 
 [![Latest Tag](https://img.shields.io/github/v/tag/Paxton-W/Wembley-stadium-event-calendar?label=version)](https://github.com/Paxton-W/Wembley-stadium-event-calendar/tags)
 [![Scheduled Calendar Build](https://github.com/Paxton-W/Wembley-stadium-event-calendar/actions/workflows/build.yml/badge.svg)](https://github.com/Paxton-W/Wembley-stadium-event-calendar/actions/workflows/build.yml)
-[![ICS Last Updated](https://img.shields.io/endpoint?url=https%3A%2F%2Fshieldsio-ics-date.vercel.app%2Fapi%2FPaxton-W%2FWembley-stadium-event-calendar%2Fdocs%2Fcalendar.ics&label=last%20updated)](https://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
+
 [![Subscribe iOS/macOS](https://img.shields.io/badge/Subscribe-Apple%20Calendar-blue?logo=apple)](webcal://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
 [![Subscribe Google Calendar](https://img.shields.io/badge/Subscribe-Google%20Calendar-blue?logo=google-calendar)](https://calendar.google.com/calendar/u/0/r?cid=https://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
 
-This project scrapes **[Wembley Stadium – Events](https://www.wembleystadium.com/events)** daily and publishes an **auto-updating ICS calendar feed**.
+This project automatically gathers event information daily and publishes an **auto-updating ICS calendar feed**.
 
 Subscribers will automatically get new events or updates in their calendar app (iOS, macOS, Google Calendar, Android).
 

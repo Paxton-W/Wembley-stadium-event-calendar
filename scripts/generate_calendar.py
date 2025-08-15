@@ -104,6 +104,7 @@ def fetch_events() -> List[Dict[str, Any]]:
         dedup[key] = e
 
     out = sorted(dedup.values(), key=lambda x: (isinstance(x['start'], datetime), x['start']))
+
     return out
 
 

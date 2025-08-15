@@ -34,5 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add docs/calendar.ics
-          git diff --quiet && echo "No changes" || (git commit -m "chore: update ICS $(date -u +"%Y-%m-%dT%H:%M:%SZ")" && git push)
+          git config core.safecrlf false
+          git add -f docs/calendar.ics
+          git status
+          git diff --cached --quiet docs/calendar.ics && echo "No changes" || (git commit -m "chore: update ICS $(date -u +"%Y-%m-%dT%H:%M:%SZ")" && git push)

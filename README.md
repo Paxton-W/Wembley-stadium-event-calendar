@@ -4,7 +4,7 @@
 [![Scheduled Calendar Build](https://github.com/Paxton-W/Wembley-stadium-event-calendar/actions/workflows/build.yml/badge.svg)](https://github.com/Paxton-W/Wembley-stadium-event-calendar/actions/workflows/build.yml)
 
 [![Subscribe iOS/macOS](https://img.shields.io/badge/Subscribe-Apple%20Calendar-blue?logo=apple)](webcal://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
-[![Subscribe Google Calendar](https://img.shields.io/badge/Subscribe-Google%20Calendar-blue?logo=google-calendar)](https://calendar.google.com/calendar/u/0/r?cid=https://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
+[![Subscribe Google Calendar](https://img.shields.io/badge/Subscribe-Google%20Calendar-blue?logo=google-calendar)](https://calendar.google.com/calendar/embed?src=sqdmfej2uf486ph74ckmpkf74j8tvvka%40import.calendar.google.com&ctz=Europe%2FLondon)
 
 This project automatically gathers event information daily and publishes an **auto-updating ICS calendar feed**.
 
@@ -18,6 +18,8 @@ Subscribers will automatically get new events or updates in their calendar app (
 
 Use this link (opens subscription prompt automatically):
 
+[![Subscribe iOS/macOS](https://img.shields.io/badge/Click_here-Apple%20Calendar-blue?logo=apple)](webcal://Paxton-W.github.io/Wembley-stadium-event-calendar/calendar.ics)
+
 ```
 webcal://paxton-w.github.io/Wembley-stadium-event-calendar/calendar.ics
 ```
@@ -26,6 +28,10 @@ webcal://paxton-w.github.io/Wembley-stadium-event-calendar/calendar.ics
 - On macOS Calendar app: Open the link with Calendar app.
 
 ### For Google Calendar / Android
+
+1. Click this https://calendar.google.com/calendar/embed?src=sqdmfej2uf486ph74ckmpkf74j8tvvka%40import.calendar.google.com&ctz=Europe%2FLondon
+
+OR
 
 1. Open Google Calendar in a **web browser** (desktop).
 2. On the left, find **Other calendars** → click the **+** icon.

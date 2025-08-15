@@ -30,7 +30,7 @@ webcal://paxton-w.github.io/Wembley-stadium-event-calendar/calendar.ics
 1. Open Google Calendar in a **web browser** (desktop).
 2. On the left, find **Other calendars** → click the **+** icon.
 3. Choose **From URL**.
-4. Paste: http://paxton-w.github.io/Wembley-stadium-event-calendar/calendar.ics
+4. Paste: https://paxton-w.github.io/Wembley-stadium-event-calendar/calendar.ics
 5. Click **Add calendar**. It will sync to your Google Calendar app.
 
 ---
